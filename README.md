@@ -8,7 +8,7 @@
 
 ## Oncode
 
-## Integrantes: <a href="https://www.linkedin.com/in/rafael-katalan-75418b231/">Rafael Nissim Katalan</a>, <a href="https://www.linkedin.com/in/victorbarq/">Gabriel Sarue Lerner</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/rafael-katalan-75418b231/">Rafael Nissim Katalan</a>, <a href="https://www.linkedin.com/in/victorbarq/">Gabriel Sarue Lerner</a>, <a href="https://www.linkedin.com/in/victorbarq/">Victor Carvalho</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
 
 ## Descrição
 
