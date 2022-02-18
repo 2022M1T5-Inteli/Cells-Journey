@@ -1,18 +1,30 @@
 extends KinematicBody2D
 var vetor = Vector2.ZERO
 var up_down = 1
-
+var normal = Vector2(0,-1)
+var bateu = 0
 func _physics_process(delta):
 	
 	
 	
-	if (self.position.y >= 2100):
+	if (self.position.y >= 2120):
 		up_down = -1
 	if (self.position.y <= 1900):
 		up_down = 1
 	
-	vetor.y = 100*up_down
-	move_and_slide(vetor)
+	vetor.y = 100*up_down-bateu
+	move_and_slide(vetor,normal)
+	
+	if is_on_floor():
+		bateu = 1000
+	elif is_on_ceiling():
+		bateu = -2500
+	else:
+		bateu = 0
+	
+	
+	
+
 	
 	print(position)
 	
