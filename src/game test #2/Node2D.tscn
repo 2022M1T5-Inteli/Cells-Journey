@@ -167,10 +167,7 @@ scale = Vector2( 1.21875, 1.34375 )
 texture = ExtResource( 6 )
 
 [node name="StaticBody2D7" type="StaticBody2D" parent="."]
-position = Vector2( 1477, 1999 )
-__meta__ = {
-"_edit_group_": true
-}
+position = Vector2( 1594, 2002 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
 position = Vector2( -9, -13.5 )
@@ -202,10 +199,14 @@ anims/RESET = SubResource( 4 )
 anims/walk = SubResource( 5 )
 
 [node name="Camera2D" type="Camera2D" parent="StaticBody2D7/KinematicBody2D"]
+position = Vector2( -95, -4 )
 current = true
 process_mode = 0
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Label" type="Label" parent="."]
 margin_top = 1923.0

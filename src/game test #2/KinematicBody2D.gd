@@ -51,6 +51,8 @@ func _physics_process(delta):
 	print(speed.y)
 	print(position.y)
 	
+	
+	
 	#voo: se quiser dps
 #	if position.y < -10:
 #		speed.y += 50

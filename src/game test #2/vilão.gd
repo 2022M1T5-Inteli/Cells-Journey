@@ -3,9 +3,18 @@ var vetor = Vector2.ZERO
 var up_down = 1
 var normal = Vector2(0,-1)
 var bateu = 0
+var lado = 0
+var time = 0
+
 func _physics_process(delta):
 	
+	var lado = rand_range(-100, +100)
+	time += 1
 	
+	if (time%100) == 0:
+		vetor.x  = lado
+		
+		
 	
 	if (self.position.y >= 2120):
 		up_down = -1
