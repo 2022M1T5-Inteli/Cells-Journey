@@ -45,12 +45,13 @@ func _physics_process(delta):
 	#animation:
 	if Input.is_action_pressed("ui_right") && is_on_floor() || Input.is_action_pressed("ui_left") && is_on_floor():
 		$Sprite/AnimationPlayer.play("walk")
+	else:
+		$Sprite/AnimationPlayer. play("stoped")
 		
 
 	
 	print(speed.y)
-	print(position.y)
-	
+#	print(position.y)
 	
 	
 	#voo: se quiser dps
