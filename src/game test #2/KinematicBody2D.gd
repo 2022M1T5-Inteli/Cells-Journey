@@ -49,8 +49,7 @@ func _physics_process(delta):
 		$Sprite/AnimationPlayer. play("stoped")
 		
 
-	
-	print(speed.y)
+#	print(speed.y)
 #	print(position.y)
 	
 	

@@ -35,7 +35,7 @@ func _physics_process(delta):
 	
 
 	
-	print(position)
+#	print(position)
 	
 
 # Declare member variables here. Examples:
