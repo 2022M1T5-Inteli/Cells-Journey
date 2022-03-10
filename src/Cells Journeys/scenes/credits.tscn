@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scripts UI/credits.gd" type="Script" id=1]
-[ext_resource path="res://images & fonts/I-pixel-u.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://med usp" type="Texture" id=3]
+[ext_resource path="res://scripts/credits.gd" type="Script" id=1]
+[ext_resource path="res://art/I-pixel-u.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://art/05-Faculdade-de-Medicina-USP-removebg-preview.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50

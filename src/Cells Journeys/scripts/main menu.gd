@@ -1,7 +1,7 @@
 extends Control
 
 func _on_play_pressed():
-	get_tree().change_scene("res://scenes UI/menu fase.tscn")
+	get_tree().change_scene("res://scenes/menu fase.tscn")
 
 
 func _on_quit_pressed():
@@ -9,4 +9,4 @@ func _on_quit_pressed():
 
 
 func _on_credits_pressed():
-	get_tree().change_scene("res://scenes UI/credits.tscn")
+	get_tree().change_scene("res://scenes/credits.tscn")
