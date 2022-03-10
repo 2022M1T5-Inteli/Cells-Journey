@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts UI/menu fase.gd" type="Script" id=1]
+
+[node name="menu fase" type="Control"]
+margin_right = 1023.0
+margin_bottom = 601.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pulmão" type="Button" parent="."]
+margin_left = 94.0
+margin_top = 126.0
+margin_right = 227.0
+margin_bottom = 206.0
+text = "PULMÃO"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pele" type="Button" parent="."]
+margin_left = 266.0
+margin_top = 266.0
+margin_right = 404.0
+margin_bottom = 358.0
+text = "PELE"
+
+[node name="fígado" type="Button" parent="."]
+margin_left = 433.0
+margin_top = 124.0
+margin_right = 571.0
+margin_bottom = 212.0
+text = "FÍGADO"
+
+[node name="colo de útero" type="Button" parent="."]
+margin_left = 605.0
+margin_top = 271.0
+margin_right = 744.0
+margin_bottom = 360.0
+text = "COLO DE ÚTERO"
+
+[node name="instestino" type="Button" parent="."]
+margin_left = 772.0
+margin_top = 124.0
+margin_right = 913.0
+margin_bottom = 212.0
+text = "INTESTINO"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="back" type="Button" parent="."]
+margin_left = 12.0
+margin_top = 552.0
+margin_right = 93.0
+margin_bottom = 589.0
+text = "BACK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="back" to="." method="_on_Button6_pressed"]
