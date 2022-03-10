@@ -1,4 +1,5 @@
-extends KinematicBody2D
+extends RigidBody2D
+
 
 var vetor = Vector2.ZERO
 var limite = 1
@@ -7,17 +8,11 @@ var time_1 = 1
 var stop = 1
 var hit = 0
 var time = 0
-var segundos = 1
-export var posicaoMinion2 = 0
-
 
 func _process(delta):
-	
-	posicaoMinion2 = position
-	
 	vetor.x = 90*limite*stop
 	
-	time += segundos
+	time += 1
 	
 	if (time%130)==0:
 		limite = limite*-1
@@ -28,12 +23,6 @@ func _process(delta):
 		get_node("Sprite").set_flip_h(false)
 		
 	move_and_slide(vetor, normal)
-	
-	if is_on_wall():
-		segundos = 0
-	else:
-		segundos = 1
-	
 	
 	
 	
@@ -58,8 +47,8 @@ func _process(delta):
 			get_node("CollisionShape2D").disabled = true
 		
 
-#	print(limite)
-#	print(position.x)
+	print(limite)
+	print(position.x)
 	
 # Declare member variables here. Examples:
 # var a = 2
@@ -67,9 +56,19 @@ func _process(delta):
 
 	
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+# Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
+
+
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

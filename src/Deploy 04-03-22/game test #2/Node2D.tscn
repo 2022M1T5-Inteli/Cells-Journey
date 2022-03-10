@@ -214,7 +214,6 @@ anims/walk = SubResource( 5 )
 
 [node name="Camera2D" type="Camera2D" parent="StaticBody2D7/KinematicBody2D"]
 position = Vector2( -95, -4 )
-current = true
 process_mode = 0
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
