@@ -38,7 +38,7 @@ func _process(delta):#função do godot; roda repetitivamente
 	
 	if is_on_ceiling():#função do godot que reconhece contato com o teto; o vilao só colide com o teto quando o jogador pula em cima dele; abaixo esta programado o vilão morrendo
 		
-		ScriptGlobal.vilaoDied = true #variavel global vira verdadeira; isso é usado para programar em outras cenas coisas que acontecem após a morte do NPC
+		ScriptGlobal.vilao2Died = true #variavel global vira verdadeira; isso é usado para programar em outras cenas coisas que acontecem após a morte do NPC
 		vetor.y = 1000 #NPC cai
 		
 		#escala do NPC diminui no eixo Y
@@ -51,7 +51,7 @@ func _process(delta):#função do godot; roda repetitivamente
 		
 		
 		
-	if ScriptGlobal.vilaoDied == true: # após vilão morto
+	if ScriptGlobal.vilao2Died == true: # após vilão morto
 		
 		time_1+=1 #soma 1 na variavel a cada frame
 		
@@ -61,15 +61,14 @@ func _process(delta):#função do godot; roda repetitivamente
 			get_node("CollisionShape2D").disabled = true
 		
 	
-	ScriptGlobal.posicaoVilao = self.position #atribui a posição do NPC a variavel global "posicaoVilao"
 	
 	if is_on_wall(): #funcao do godot que reconhece colisão horizontal
-		ScriptGlobal.vilaoHit = true #faz a variavel global "vilaoHit" ser verdadeira, variavel utilizada no "Player" para programar colisão após contato com NPC
+		ScriptGlobal.vilao2Hit = true #faz a variavel global "vilaoHit" ser verdadeira, variavel utilizada no "Player" para programar colisão após contato com NPC
 	else:
-		ScriptGlobal.vilaoHit = false #faz a variavel global "vilaoHit" voltar a ser falsa
+		ScriptGlobal.vilao2Hit = false #faz a variavel global "vilaoHit" voltar a ser falsa
 		
 	if ScriptGlobal.dano == true: #variavel global "dano" é true quando o jogador está no processo de perder vida (programado no script do "Player")
-		print("oo")
+		
 		#o colisor é desligado para que o jogador não fique perdendo vida por frame que esta em contato com NPC, mas perder apenas uma vida por contato
 		get_node("CollisionShape2D").disabled = true
 		recharge = true #variavel vira verdadeira para iniciar contagem de tempo para ligar de volta o colisor
@@ -78,7 +77,7 @@ func _process(delta):#função do godot; roda repetitivamente
 		
 		time_3+=1 #soma 1 a cada frame em "time_3"
 		
-	if (time_3%50)==0 and ScriptGlobal.vilaoDied == false: #se time_3 for multipli de 50, ou seja, a cada 50 frames e o NPC não estiver morto (comando escrito para concertar um BUG)
+	if (time_3%50)==0 and ScriptGlobal.vilao2Died == false: #se time_3 for multipli de 50, ou seja, a cada 50 frames e o NPC não estiver morto (comando escrito para concertar um BUG)
 		
 		get_node("CollisionShape2D").disabled = false # colisor é reabilitado
 		ScriptGlobal.dano == false #desliga o processo de perda de vida

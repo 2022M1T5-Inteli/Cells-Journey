@@ -4,7 +4,7 @@ var velocidade = Vector2.ZERO # Variável que determina o vetor que será usado 
 var contagem_pulo = 0 # 
 var normal = Vector2(0,-1) #vetor vertical para orientar funções de "is_on_floor", "is_on_ceiling" e "is_on_wall"
 var run = 1 #variavel que multiplica o vetor de velocidade para acelerar o movimento quando a corrida for habilitada (assume valor 1(neutro em multiplicação) quando esta andando e 2 para correr)
-var life = 6 # Variável que armaneza o número de vidas do jogador (inicia com 6)
+ 
 var collision #variavel ultilizada para reconhecer colisão
 
 #andar (movimento horizontal controlado pelo jogador)
@@ -47,30 +47,31 @@ func pulo():
 func vida():
 	
 	
-	#reconhece contato lateral com o monstrinho:
+	#reconhece contato lateral com os monstrinhos:
 	for i in range(get_slide_count() -1):
 		collision = get_slide_collision(i)
 		
-	if ScriptGlobal.vilaoHit == true or (is_on_wall() and collision.collider.name == "vilao"):
+	if (ScriptGlobal.vilaoHit == true or (is_on_wall() and collision.collider.name == "vilao")) or (ScriptGlobal.vilao2Hit == true or (is_on_wall() and collision.collider.name == "vilao_2")):
 		ScriptGlobal.dano = true #"dano" variavel booleana global que armazena a informação de que o personagem está no processo de perder vida 
 	else:
 		ScriptGlobal.dano = false
 	
 	if ScriptGlobal.dano == true:
 		#variavel "life" reduz 1 quando "dano" é verdadeiro
-		life-=1
+		ScriptGlobal.life-=1
 		
+
 	#personagem pisca enquanto perde vida
 		get_node("Sprite").visible = false
 	else:
 		get_node("Sprite").visible = true
 		
 	#"vida" é o nó que contém a barra de vida; assume valor de "life"
-	get_node("vida").value = life
+	get_node("vida").value = ScriptGlobal.life
 	
 	
 	#encerrar a fase quando a vida chega à zero
-	if life<=0:
+	if ScriptGlobal.life<=0:
 		get_tree().change_scene("res://scenes/game_over.tscn")
 	
 #função do godot para rodar os processos físicos
