@@ -71,7 +71,7 @@ func vida():
 	
 	
 	#encerrar a fase quando a vida chega à zero
-	if ScriptGlobal.life<=0:
+	if ScriptGlobal.life<=0 or velocidade.y > 1100:#game-over quando ele cai muito... como a posição varia conforme o mapa, invez de programar a posição maxima que ele cai, eu programo a velocidade maxima que ele atinge pensando na aceleração que replica a gravidade
 		get_tree().change_scene("res://scenes/game_over.tscn")
 	
 #função do godot para rodar os processos físicos
