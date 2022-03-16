@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/vida.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 11.5, 14 )
+extents = Vector2( 17, 22.5 )
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -53,19 +53,19 @@ corner_radius_bottom_right = 239
 corner_radius_bottom_left = 239
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
-position = Vector2( 71, 60 )
+position = Vector2( 40, 18 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, -23 )
+position = Vector2( -8, -14.5 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -2.75, -21.5 )
-scale = Vector2( 1.17742, 1.10257 )
+position = Vector2( -10.25, -10 )
+scale = Vector2( 1.66129, 1.69231 )
 texture = ExtResource( 2 )
 hframes = 5
 frame = 2
@@ -81,7 +81,7 @@ drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 drag_margin_left = 0.83
 drag_margin_right = 0.32
-drag_margin_bottom = 0.35
+drag_margin_bottom = 0.64
 
 [node name="vida" parent="." instance=ExtResource( 3 )]
 modulate = Color( 0.8, 0.752941, 0.752941, 1 )
