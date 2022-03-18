@@ -7,7 +7,6 @@
 radius = 10.0499
 
 [node name="vilao_2" type="KinematicBody2D"]
-position = Vector2( 68, 68 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true

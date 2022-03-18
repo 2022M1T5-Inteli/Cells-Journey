@@ -1,13 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://art/sprite principal.png" type="Texture" id=2]
 [ext_resource path="res://scenes/vida.tscn" type="PackedScene" id=3]
-[ext_resource path="res://sons/tiro.wav" type="AudioStream" id=4]
-[ext_resource path="res://sons/jump.wav" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 17, 22.5 )
+extents = Vector2( 11.5, 14 )
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -55,16 +53,19 @@ corner_radius_bottom_right = 239
 corner_radius_bottom_left = 239
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
-position = Vector2( 40, 18 )
+position = Vector2( 71, 60 )
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -8, -14.5 )
+position = Vector2( -0.5, -23 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -10.25, -10 )
-scale = Vector2( 1.66129, 1.69231 )
+position = Vector2( -2.75, -21.5 )
+scale = Vector2( 1.17742, 1.10257 )
 texture = ExtResource( 2 )
 hframes = 5
 frame = 2
@@ -80,23 +81,17 @@ drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 drag_margin_left = 0.83
 drag_margin_right = 0.32
-drag_margin_bottom = 0.64
+drag_margin_bottom = 0.35
 
 [node name="vida" parent="." instance=ExtResource( 3 )]
 modulate = Color( 0.8, 0.752941, 0.752941, 1 )
-margin_left = -103.0
-margin_top = -162.0
-margin_right = 97.0
-margin_bottom = -142.0
+margin_left = -487.0
+margin_top = -274.0
+margin_right = -287.0
+margin_bottom = -254.0
 custom_styles/bg = SubResource( 4 )
 max_value = 6.0
 step = 1.0
 value = 6.0
 rounded = true
 percent_visible = false
-
-[node name="somPulo" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
-
-[node name="somTiro" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
