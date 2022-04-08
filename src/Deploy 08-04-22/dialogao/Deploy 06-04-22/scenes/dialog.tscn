@@ -1,0 +1,71 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://art/dialogue-boxpng.png" type="Texture" id=1]
+[ext_resource path="res://art/rogerchammas.png" type="Texture" id=2]
+[ext_resource path="res://scripts/dialog.gd" type="Script" id=3]
+[ext_resource path="res://art/enter.png" type="Texture" id=4]
+[ext_resource path="res://Fontes/NegaraserifHairlineitalic-nRgjJ.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://sons/click_2.wav" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 19
+outline_size = 1
+extra_spacing_top = 9
+font_data = ExtResource( 5 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+pause_mode = 2
+
+[node name="dialog" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -334.0
+margin_top = -92.0
+margin_right = -334.0
+margin_bottom = -92.0
+rect_scale = Vector2( 1.5, 1.5 )
+script = ExtResource( 3 )
+
+[node name="chammas" type="Sprite" parent="dialog"]
+position = Vector2( 320, 403.333 )
+scale = Vector2( 0.802, 0.8 )
+texture = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="dialog"]
+margin_left = 375.0
+margin_top = 357.0
+margin_right = 962.0
+margin_bottom = 510.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="dialog"]
+margin_left = 390.667
+margin_top = 380.333
+margin_right = 942.667
+margin_bottom = 505.333
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "\"esse é o tenis, ...............................................................................................................................................................................................................\""
+text = "\"esse é o tenis, ...............................................................................................................................................................................................................\""
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="dialog"]
+
+[node name="setinha" type="Sprite" parent="dialog"]
+position = Vector2( 925, 480 )
+scale = Vector2( 0.559829, 0.559829 )
+texture = ExtResource( 4 )
+
+[node name="somClick" type="AudioStreamPlayer" parent="dialog"]
+stream = ExtResource( 6 )
+
+[connection signal="tree_entered" from="." to="dialog" method="_on_CanvasLayer_tree_entered"]
+[connection signal="tween_completed" from="dialog/Tween" to="dialog" method="_on_Tween_tween_completed"]

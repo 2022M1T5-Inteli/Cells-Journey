@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/FumacaBraba.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/CigarroBrabo.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sprites/fundo fase boss.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/frente fase boss.png" type="Texture" id=5]
+[ext_resource path="res://scenes/bossFight.gd" type="Script" id=6]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 372, 243 )
+script = ExtResource( 6 )
+
+[node name="FundoFaseBoss" type="Sprite" parent="."]
+position = Vector2( 1205, 724 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="BossFightMapa" type="StaticBody2D" parent="."]
+scale = Vector2( 1.5, 1.5 )
+
+[node name="FrenteFaseBoss" type="Sprite" parent="BossFightMapa"]
+position = Vector2( 755, 503 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BossFightMapa"]
+polygon = PoolVector2Array( -167, 508, -142, 530, -122, 575, -122, 633, -135, 685, -174, 712, -139, 735, -113, 755, -87, 794, -78, 833, -82, 878, -83, 902, -45, 907, -22, 928, -15, 923, -13, 909, 37, 879, 115, 873, 174, 893, 198, 925, 209, 957, 213, 982, 244, 968, 280, 965, 307, 961, 340, 963, 374, 977, 397, 992, 408, 998, 410, 987, 418, 973, 468, 957, 512, 949, 580, 945, 626, 957, 650, 981, 657, 965, 669, 951, 701, 936, 757, 936, 806, 945, 842, 962, 853, 977, 863, 974, 863, 947, 877, 937, 902, 937, 933, 951, 940, 950, 947, 942, 961, 915, 1009, 891, 1043, 889, 1086, 899, 1114, 913, 1146, 932, 1164, 918, 1212, 922, 1253, 932, 1297, 936, 1346, 943, 1378, 968, 1397, 979, 1406, 949, 1476, 928, 1521, 930, 1565, 951, 1582, 968, 1597, 983, 1612, 962, 1621, 926, 1638, 911, 1650, 907, 1633, 894, 1621, 877, 1619, 819, 1642, 771, 1704, 737, 1729, 730, 1727, 694, 1746, 649, 1769, 624, 1744, 598, 1736, 517, 1753, 469, 1882, 473, 1881, 1256, -368, 1256, -370, 508 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="BossFightMapa"]
+polygon = PoolVector2Array( -168, 506, -155, 490, -152, 455, -174, 420, -184, 406, -149, 388, -136, 342, -136, 290, -161, 281, -158, 263, -147, 253, -135, 178, -162, 126, -197, 110, -198, 95, -187, 77, -171, 18, -179, -25, -113, -68, -61, -45, -11, -30, 22, -41, 60, -77, 90, -42, 142, -16, 233, -18, 276, -65, 303, -46, 372, -24, 459, -13, 516, -34, 532, -60, 552, -40, 600, -34, 635, -49, 659, -85, 682, -42, 731, -26, 790, -26, 827, -41, 852, -128, 861, -80, 912, -37, 1002, -26, 1036, -43, 1059, -97, 1101, -46, 1177, -26, 1251, -57, 1268, -116, 1282, -94, 1358, -77, 1412, -80, 1435, -60, 1477, -15, 1576, 22, 1627, 31, 1661, 50, 1667, 79, 1684, 107, 1684, 172, 1746, 209, 1712, 234, 1712, 297, 1729, 299, 1754, 305, 1723, 339, 1712, 367, 1712, 418, 1743, 441, 1752, 469, 1873, 466, 1879, -247, -371, -240, -371, 500 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 134, 1257 )
+scale = Vector2( 2.5, 2.5 )
+
+[node name="FumacaBraba" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1899, 846 )
+
+[node name="CigarroBrabo" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1981, 470 )
+scale = Vector2( 1.7, 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 1136, 760 )
+current = true
+zoom = Vector2( 2.4, 3 )

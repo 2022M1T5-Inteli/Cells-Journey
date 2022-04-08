@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://art/cigarrao__1_-removebg-preview.png" type="Texture" id=1]
+[ext_resource path="res://scripts/CigarroBrabo.gd" type="Script" id=2]
+[ext_resource path="res://VidaCigarro.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 92, 211.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 73.5, 201 )
+
+[node name="CigarroBrabo" type="Area2D"]
+position = Vector2( 170, 149 )
+scale = Vector2( 1, 1.5 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 23.5001, 101.626 )
+scale = Vector2( 4.3007, 2.20853 )
+texture = ExtResource( 1 )
+hframes = 4
+vframes = 2
+frame = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 57, 131.751 )
+shape = SubResource( 1 )
+
+[node name="CigarroBrabo" type="StaticBody2D" parent="."]
+position = Vector2( 45.0001, -2.7495 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CigarroBrabo"]
+position = Vector2( 19.4999, 135.749 )
+shape = SubResource( 2 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 3 )]
