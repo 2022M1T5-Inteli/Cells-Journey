@@ -14,7 +14,7 @@
 
 📜 Cell's Journey é um jogo de aventura para computador.
 <br><br>
-Além disso, o objetivo do é conscientizar o público de 14 a 17 anos sobre os hábitos que aumentam a probabilidade do desenvolvimento de câncer ao longo da vida e como o mesmo se forma no corpo .
+Além disso, o objetivo é conscientizar o público de 14 a 17 anos sobre os hábitos que aumentam a probabilidade do desenvolvimento de câncer ao longo da vida e como o mesmo se forma no corpo. 
 Para isso é utilizado uma mecânica de aventura em plataforma 2D e dialogos interativos com embasamento científico.
 
 <p align="center">
@@ -38,19 +38,19 @@ Para isso é utilizado uma mecânica de aventura em plataforma 2D e dialogos int
 |-->src<br>
 |readme.md<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
+<b>Função de cada pasta do GitHub</b>
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+<b>README.MD</b>: Guia e explicação geral sobre o jogo.
 
 Há também 4 pastas que seguem da seguinte forma:
 
-<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
+<b>documentos</b>: Aqui estarão todos os documentos do projeto, principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
 
-<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
+<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Existem 2 pastas, uma para binários <b>Windows</b> e uma para a <b>Web/HTML</b>
 
-<b>imagens</b>: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
+<b>imagens</b>: As imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
 
-<b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
+<b>src</b>: Nesta está localizado todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🛠 Instalação
 
@@ -66,7 +66,7 @@ Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro progra
 <b>HTML:</b>
 
 Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através do Mozila Firefox) 
 
 ## 📈 Exemplo de uso
 
