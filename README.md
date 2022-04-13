@@ -40,10 +40,6 @@ Para isso é utilizado uma mecânica de aventura em plataforma 2D e dialogos int
 
 <b>Função de cada pasta do GitHub</b>
 
-<b>README.MD</b>: Guia e explicação geral sobre o jogo.
-
-Há também 4 pastas que seguem da seguinte forma:
-
 <b>documentos</b>: Aqui estarão todos os documentos do projeto, principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
 
 <b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Existem 2 pastas, uma para binários <b>Windows</b> e uma para a <b>Web/HTML</b>
@@ -61,7 +57,7 @@ Não há versão para Android.
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
+Encontre o Cell's_Journey.exe na pasta executáveis e execute-o como qualquer outro programa.
 
 <b>HTML:</b>
 
@@ -78,19 +74,16 @@ Este modelo pode ser copiado e utilizado à vontade.
 
 Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
 
+O principal exemplo de uso do jogo é no ambiente de sala de aula, juntamente com os outros jogos desenvolvidos por toda a Turma-5 do Inteli. Assim, é possível ensinar desde os conceitos macro, micro e psicosociais envolvidos no tratamento e prevenção do câncer.
+
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-Para abrir este projeto você necessita das seguintes ferramentas:
+Para abrir este projeto você necessita apenas do GODOT neste link:
 
 -<a href="https://godotengine.org/download">GODOT</a>
 
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
+Após baixar e instalar o godot, copie a pasta src em uma nova pasta no seu computador. 
+Em seguida execute o godot e importe o arquivo project.godot que está localizado na pasta onde você colou os arquivos da "scr" 
 
 ## 🗃 Histórico de lançamentos
 
