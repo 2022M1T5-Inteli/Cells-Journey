@@ -14,15 +14,14 @@
 
 📜 Cell's Journey é um jogo de aventura para computador.
 <br><br>
+Além disso, o objetivo do é conscientizar o público de 14 a 17 anos sobre os hábitos que aumentam a probabilidade do desenvolvimento de câncer ao longo da vida e como o mesmo se forma no corpo .
+Para isso é utilizado uma mecânica de aventura em plataforma 2D e dialogos interativos com embasamento científico.
 
 <p align="center">
 <img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
-
-💡 Cell's journey é um jogo que visa conscientizar o público de 14 a 17 anos sobre os hábitos que aumentam a probabilidade do desenvolvimento de câncer ao longo da vida e como o mesmo se forma no corpo .
-<br><br>
 
 ## 🛠 Estrutura de pastas
 
