@@ -18,7 +18,7 @@ Além disso, o objetivo é conscientizar o público de 14 a 17 anos sobre os há
 Para isso é utilizado uma mecânica de aventura em plataforma 2D e dialogos interativos com embasamento científico.
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
+<img src="https://imgur.com/LABxJ1a" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
@@ -74,7 +74,7 @@ Este modelo pode ser copiado e utilizado à vontade.
 
 Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
 
-O principal exemplo de uso do jogo é no ambiente de sala de aula, juntamente com os outros jogos desenvolvidos por toda a Turma-5 do Inteli. Assim, é possível ensinar desde os conceitos macro, micro e psicosociais envolvidos no tratamento e prevenção do câncer.
+O principal exemplo de uso do jogo é no ambiente de sala de aula do ensino médio, juntamente com os outros jogos desenvolvidos por toda a Turma-5 do Inteli. Assim, é possível ensinar desde os conceitos macro, micro e psicosociais envolvidos no tratamento e prevenção do câncer.
 
 ## 💻 Configuração para Desenvolvimento
 
