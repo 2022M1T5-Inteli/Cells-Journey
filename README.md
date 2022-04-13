@@ -18,7 +18,7 @@ Além disso, o objetivo é conscientizar o público de 14 a 17 anos sobre os há
 Para isso é utilizado uma mecânica de aventura em plataforma 2D e dialogos interativos com embasamento científico.
 
 <p align="center">
-<img src="<blockquote class="imgur-embed-pub" lang="en" data-id="LABxJ1a"><a href="https://imgur.com/LABxJ1a">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>" alt="NOME DO JOGO" border="0">
+<img src="https://i.imgur.com/LABxJ1a.png" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
