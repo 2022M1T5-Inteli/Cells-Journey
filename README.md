@@ -114,12 +114,14 @@ A cada atualização os detalhes devem ser lançados aqui.
     * Cénario com plataformas melhores 
     * NPC's agora morrem e somem da fase 
 
-
-* 1.0 - 18/02/2022
-    * Deploy 1° Sprint
+* 1.1 - 22/02/2022
     * Movimentação básica do jogador
     * Cénario simples
     * Primeiro inimigo adicionado com colisão
+
+* 1.0 - 18/02/2022
+    * Deploy 1° Sprint
+    * Validação das ideias com o parceiro de mercado.
 
 ## 📋 Licença/License
 
