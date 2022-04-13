@@ -57,7 +57,7 @@ Não há versão para Android.
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
-Encontre o Cell's_Journey.exe na pasta executáveis e execute-o como qualquer outro programa.
+Encontre os arquivos Cell's_Journey.exe e Cell's_Journey.pck na pasta executáveis e execute-o como qualquer outro programa.
 
 <b>HTML:</b>
 
@@ -65,14 +65,6 @@ Não há instalação!
 Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através do Mozila Firefox) 
 
 ## 📈 Exemplo de uso
-
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado.
-
-Adicione blocos de códigos e, se necessário, screenshots.
-
-Este modelo pode ser copiado e utilizado à vontade.
-
-Através da cópia/clone/ download do repositório, altere os dados do readme.md e carregue os arquivos de seu projeto.
 
 O principal exemplo de uso do jogo é no ambiente de sala de aula do ensino médio, juntamente com os outros jogos desenvolvidos por toda a Turma-5 do Inteli. Assim, é possível ensinar desde os conceitos macro, micro e psicosociais envolvidos no tratamento e prevenção do câncer.
 
@@ -89,18 +81,45 @@ Em seguida execute o godot e importe o arquivo project.godot que está localizad
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+* 1.8 - 14/04/2022
+    * Deploy 5° Sprint
+    * Melhorias finais no cénario
+    * Video de contextualização implementado
+    * Correção da bossfight
+    * Novas animações adicionadas
+    * Textos informativos sobre outros tipos de câncer
+    * Mais dialogos do Roger foram implementados 
+* 1.6 - 01/04/2022
+    * Deploy 4° Sprint 
+    * Cénario novo implementado 
+    * Melhoria nos dialogos do Roger
+    * Novas artes do menu
+    * Arma de água mata os NPC's
+    * Tela de game over caso caia das plataformas 
+    * Boss fight implementada 
+    * 
+* 1.4 - 18/03/2022
+    * Deploy 3° Sprint
+    * Menu inicial adicionado
+    * Mapa do corpo humano com as fases
+    * Função de pausar o jogo
+    * Boneco do jogador agora tem vida e toma dano caso colida com NPC
+    * Melhoria no cénario
+    * Som adicionado
+    * Tênis que proporciona que o jogador corra adicionado
+    * Arma de agua adicionada
+    * Dialogo com o roger implementado 
+* 1.2 - 04/03/2022
+    * Deploy 2° Sprint
+    * Cénario com plataformas melhores 
+    * NPC's agora morrem e somem da fase 
+
+
+* 1.0 - 18/02/2022
+    * Deploy 1° Sprint
+    * Movimentação básica do jogador
+    * Cénario simples
+    * Primeiro inimigo adicionado com colisão
 
 ## 📋 Licença/License
 
@@ -108,10 +127,10 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 ## 🎓 Referências
 
-Aqui estão as referências usadas no projeto.
+Referências utilizadas no jogo.
 
 1. <https://github.com/iuricode/readme-template>
 2. <https://github.com/gabrieldejesus/readme-model>
 3. <https://creativecommons.org/share-your-work/>
 4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+5. Músicas estão referenciadas no GDD na seção 7 Bibliogafrias. 
