@@ -8,7 +8,7 @@
 
 ## Oncode
 
-## Integrantes: <a href="https://www.linkedin.com/in/rafael-katalan">Rafael Nissim Katalan</a>, <a href="https://www.linkedin.com/in/victorbarq/">Gabriel Sarue Lerner</a>, <a href="https://www.linkedin.com/in/victorbarq/">Victor Carvalho</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/matheus-macedo-santos-2a8106194/">Matheus Macedo Santos</a>
+## Integrantes: <a href="https://www.linkedin.com/in/eduardo-fran%C3%A7a-porto-345bba164/">Eduardo França Porto</a>,<a href="https://www.google.com/">Gabriel Sarue Lerner</a>,<a href="https://www.google.com/">Gustavo Pereira</a>,<a href="https://www.linkedin.com/in/sbluizfernando/">Luiz F S Borges</a>,<a href="https://www.linkedin.com/in/matheus-macedo-santos-2a8106194/">Matheus Macedo Santos</a><a href="https://www.linkedin.com/in/rafael-katalan">Rafael Nissim Katalan</a>, <a href="https://www.google.com/">Raphael Lisboa</a>,<a href="https://www.google.com/">Victor de Carvalho</a>, 
 
 ## Descrição
 
