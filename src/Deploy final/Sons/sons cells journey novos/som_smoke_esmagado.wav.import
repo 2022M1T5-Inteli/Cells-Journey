@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/som_smoke_esmagado.wav-4d6e380b1f86d6dbe69834e247d52748.sample"
+
+[deps]
+
+source_file="res://Sons/sons cells journey novos/som_smoke_esmagado.wav"
+dest_files=[ "res://.import/som_smoke_esmagado.wav-4d6e380b1f86d6dbe69834e247d52748.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

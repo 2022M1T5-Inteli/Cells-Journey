@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/tiro.wav-9783c3b696b6c2234c806d8280586f46.sample"
+
+[deps]
+
+source_file="res://Sons/tiro.wav"
+dest_files=[ "res://.import/tiro.wav-9783c3b696b6c2234c806d8280586f46.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

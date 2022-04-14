@@ -1,0 +1,197 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Artes/Sprites/Plataforma 1 (1).png" type="Texture" id=1]
+[ext_resource path="res://Artes/BRMEIO.png" type="Texture" id=2]
+[ext_resource path="res://Artes/Sprites/BRFINAL.png" type="Texture" id=3]
+[ext_resource path="res://Cenas/FundoNovo.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Artes/Sprites/BRESQ.png" type="Texture" id=5]
+[ext_resource path="res://Artes/Sprites/Plataforma 3 (1).png" type="Texture" id=6]
+[ext_resource path="res://Artes/Sprites/Plataforma 3.png" type="Texture" id=7]
+[ext_resource path="res://Artes/Sprites/Plataforma 1.png" type="Texture" id=8]
+[ext_resource path="res://Scripts/AntesBossFight.gd" type="Script" id=9]
+[ext_resource path="res://Cenas/Jogador.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Artes/Sprites/tunel.png" type="Texture" id=11]
+[ext_resource path="res://Cenas/MenuDePause.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Artes/SalaDoBoss.png" type="Texture" id=14]
+[ext_resource path="res://Cenas/VilaoNicotina1.tscn" type="PackedScene" id=15]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 84, 127.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 48.25, 304.625 )
+
+[node name="AntesBossFight" type="Node2D"]
+position = Vector2( 376, 0 )
+script = ExtResource( 9 )
+
+[node name="PlataformaPrincipalIncio" type="Sprite" parent="."]
+position = Vector2( 10.5, 0 )
+texture = ExtResource( 5 )
+
+[node name="PlataformaPrincipalMeio" type="Sprite" parent="."]
+position = Vector2( 797.5, 0 )
+texture = ExtResource( 2 )
+
+[node name="PlataformaPrincipalMeio2" type="Sprite" parent="."]
+position = Vector2( 1584.5, 0 )
+texture = ExtResource( 2 )
+
+[node name="PlataformaPrincipalMeio3" type="Sprite" parent="."]
+position = Vector2( 2371, 0 )
+texture = ExtResource( 2 )
+
+[node name="PlataformaPrincipalMeio4" type="Sprite" parent="."]
+position = Vector2( 3160, 0 )
+texture = ExtResource( 2 )
+
+[node name="PlataformaPrincipalMeio5" type="Sprite" parent="."]
+position = Vector2( 3949, 0 )
+texture = ExtResource( 2 )
+
+[node name="PlataformaPrincipalMeio6" type="Sprite" parent="."]
+position = Vector2( 4738, 0 )
+texture = ExtResource( 2 )
+
+[node name="PlataformaPrincipalMeio7" type="Sprite" parent="."]
+position = Vector2( 5527, 0 )
+texture = ExtResource( 2 )
+
+[node name="PlataformaPrincipalFinal" type="Sprite" parent="."]
+position = Vector2( 6327, 0 )
+texture = ExtResource( 3 )
+
+[node name="CorpoEstaticoPlataformaPrincipal" type="StaticBody2D" parent="."]
+
+[node name="ColisorChaoPlataformaPrincipal" type="CollisionPolygon2D" parent="CorpoEstaticoPlataformaPrincipal"]
+polygon = PoolVector2Array( -384, -190, 5921, -188, 5938, -208, 5948, -230, 5961, -253, 5980, -267, 6695, -264, 6705, -256, 6700, 125, -377, 57 )
+
+[node name="CorpoEstaticoPlataformaFlutuantePequenaAzul" type="StaticBody2D" parent="."]
+position = Vector2( 930, -86 )
+scale = Vector2( 0.5, 0.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PlataformaFlutuantePequenaAzul" type="Sprite" parent="CorpoEstaticoPlataformaFlutuantePequenaAzul"]
+position = Vector2( 76, -796 )
+texture = ExtResource( 1 )
+
+[node name="ColisorPlataformaFlutuantePequenaAzul" type="CollisionPolygon2D" parent="CorpoEstaticoPlataformaFlutuantePequenaAzul"]
+polygon = PoolVector2Array( -50, -844, -40, -846, -30, -844, -2, -844, 4, -846, 38, -846, 42, -842, 34, -804, 38, -798, 38, -790, 8, -764, -4, -764, -18, -768, -28, -788, -32, -800, -48, -810 )
+
+[node name="CorpoEstaticoPlataformaFlutuanteGrandeAzul" type="StaticBody2D" parent="."]
+position = Vector2( 384, -46 )
+scale = Vector2( 0.5, 0.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PlataformaFlutuanteGrandeAzul" type="Sprite" parent="CorpoEstaticoPlataformaFlutuanteGrandeAzul"]
+position = Vector2( 532, -770 )
+texture = ExtResource( 8 )
+
+[node name="ColisorPlataformaFlutuanteGrandeAzul" type="CollisionPolygon2D" parent="CorpoEstaticoPlataformaFlutuanteGrandeAzul"]
+polygon = PoolVector2Array( 408, -820, 426, -818, 428, -816, 450, -818, 500, -822, 536, -816, 568, -814, 598, -822, 634, -822, 658, -812, 658, -800, 654, -782, 652, -776, 644, -766, 636, -766, 614, -750, 598, -732, 592, -730, 568, -728, 542, -716, 518, -714, 496, -718, 482, -728, 448, -734, 428, -762, 422, -776, 410, -782 )
+
+[node name="CorpoEstaticoPlataformaFlutuantePequenaAmarela" type="StaticBody2D" parent="."]
+position = Vector2( 772, -213 )
+scale = Vector2( 0.5, 0.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PlataformaFlutuantePequenaAmarela" type="Sprite" parent="CorpoEstaticoPlataformaFlutuantePequenaAmarela"]
+position = Vector2( 976, -770 )
+texture = ExtResource( 6 )
+
+[node name="ColisorPlataformaFlutuantePequenaAmarela" type="CollisionPolygon2D" parent="CorpoEstaticoPlataformaFlutuantePequenaAmarela"]
+polygon = PoolVector2Array( 854, -818, 862, -818, 868, -816, 896, -816, 904, -820, 948, -820, 978, -816, 984, -802, 980, -782, 980, -770, 972, -758, 964, -752, 956, -744, 954, -736, 942, -732, 932, -724, 924, -730, 914, -730, 894, -734, 888, -736, 872, -762, 868, -774, 854, -782, 848, -800 )
+
+[node name="CorpoEstaticoPlataformaFlutuanteGrandeAmarela" type="StaticBody2D" parent="."]
+position = Vector2( 971, -117 )
+scale = Vector2( 0.5, 0.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PlataformaFlutuanteGrandeAmarela" type="Sprite" parent="CorpoEstaticoPlataformaFlutuanteGrandeAmarela"]
+position = Vector2( 1298, -770 )
+texture = ExtResource( 7 )
+
+[node name="ColisorPlataformaFlutuanteGrandeAmarela" type="CollisionPolygon2D" parent="CorpoEstaticoPlataformaFlutuanteGrandeAmarela"]
+polygon = PoolVector2Array( 1174, -818, 1192, -818, 1216, -816, 1226, -820, 1270, -820, 1304, -814, 1336, -812, 1364, -822, 1398, -822, 1422, -812, 1424, -802, 1416, -776, 1412, -768, 1404, -768, 1378, -748, 1364, -732, 1350, -728, 1334, -728, 1310, -716, 1298, -714, 1288, -714, 1272, -718, 1264, -718, 1248, -728, 1212, -736, 1194, -762, 1188, -776, 1178, -780, 1172, -794 )
+
+[node name="TpBossFight" type="Area2D" parent="."]
+
+[node name="SalaDoBoss" type="Sprite" parent="TpBossFight"]
+position = Vector2( 5373, -789 )
+texture = ExtResource( 14 )
+
+[node name="ColisorTpBossFight" type="CollisionShape2D" parent="TpBossFight"]
+position = Vector2( 5464, -318.5 )
+shape = SubResource( 1 )
+
+[node name="CorpoEstaticoPlataformaFlutuanteGrandeAmarela2" type="StaticBody2D" parent="."]
+position = Vector2( 1319, -309 )
+scale = Vector2( 0.5, 0.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PlataformaFlutuanteGrandeAmarela" type="Sprite" parent="CorpoEstaticoPlataformaFlutuanteGrandeAmarela2"]
+position = Vector2( 1298, -770 )
+texture = ExtResource( 7 )
+
+[node name="ColisorPlataformaFlutuanteGrandeAmarela" type="CollisionPolygon2D" parent="CorpoEstaticoPlataformaFlutuanteGrandeAmarela2"]
+polygon = PoolVector2Array( 1174, -818, 1192, -818, 1216, -816, 1226, -820, 1270, -820, 1304, -814, 1336, -812, 1364, -822, 1398, -822, 1422, -812, 1424, -802, 1416, -776, 1412, -768, 1404, -768, 1378, -748, 1364, -732, 1350, -728, 1334, -728, 1310, -716, 1298, -714, 1288, -714, 1272, -718, 1264, -718, 1248, -728, 1212, -736, 1194, -762, 1188, -776, 1178, -780, 1172, -794 )
+
+[node name="CorpoEstaticoTunelAntesBossFight" type="StaticBody2D" parent="."]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TunelAntesBossFight" type="Sprite" parent="CorpoEstaticoTunelAntesBossFight"]
+position = Vector2( -205, -164 )
+texture = ExtResource( 11 )
+
+[node name="ColisorTunelAntesBossFight" type="CollisionPolygon2D" parent="CorpoEstaticoTunelAntesBossFight"]
+polygon = PoolVector2Array( -258, -295, -239, -293, -217, -253, -215, -223, -195, -224, -193, -257, -176, -291, -151, -298, -142, -259, -143, -196, -268, -191, -269, -262 )
+
+[node name="Jogador" parent="." instance=ExtResource( 10 )]
+position = Vector2( -145, -364 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 4 )]
+
+[node name="VilaoNicotina1" parent="." instance=ExtResource( 15 )]
+position = Vector2( 958, -923 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="VilaoNicotina2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 3919, -920 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="VilaoNicotina3" parent="." instance=ExtResource( 15 )]
+position = Vector2( 2700, -923 )
+scale = Vector2( 1.7, 1.7 )
+
+[node name="VilaoNicotina4" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1767, -622 )
+
+[node name="VilaoNicotina5" parent="." instance=ExtResource( 15 )]
+position = Vector2( 4614, -618 )
+
+[node name="VilaoNicotina6" parent="." instance=ExtResource( 15 )]
+position = Vector2( 3347, -628 )
+
+[node name="MenuDePause" parent="." instance=ExtResource( 13 )]
+
+[node name="AntesNicotina" type="Area2D" parent="."]
+position = Vector2( 1531, -962 )
+
+[node name="ColisorAntesNicotina" type="CollisionShape2D" parent="AntesNicotina"]
+position = Vector2( -1268, 458 )
+shape = SubResource( 2 )
+
+[connection signal="body_entered" from="TpBossFight" to="Jogador" method="_on_TpBossFight_body_entered"]
+[connection signal="body_entered" from="AntesNicotina" to="Jogador" method="_on_AntesNicotina_body_entered"]

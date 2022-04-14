@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/musica background.wav-d6216d25d56da3bff772159d4f5abf49.sample"
+
+[deps]
+
+source_file="res://Sons/musica background.wav"
+dest_files=[ "res://.import/musica background.wav-d6216d25d56da3bff772159d4f5abf49.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
