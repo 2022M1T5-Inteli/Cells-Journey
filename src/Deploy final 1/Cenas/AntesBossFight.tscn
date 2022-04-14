@@ -176,15 +176,6 @@ scale = Vector2( 1.7, 1.7 )
 position = Vector2( 2700, -923 )
 scale = Vector2( 1.7, 1.7 )
 
-[node name="VilaoNicotina4" parent="." instance=ExtResource( 15 )]
-position = Vector2( 1767, -622 )
-
-[node name="VilaoNicotina5" parent="." instance=ExtResource( 15 )]
-position = Vector2( 4614, -618 )
-
-[node name="VilaoNicotina6" parent="." instance=ExtResource( 15 )]
-position = Vector2( 3347, -628 )
-
 [node name="MenuDePause" parent="." instance=ExtResource( 13 )]
 
 [node name="AntesNicotina" type="Area2D" parent="."]

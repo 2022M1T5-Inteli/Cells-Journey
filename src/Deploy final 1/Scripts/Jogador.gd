@@ -6,7 +6,7 @@ var vetor_normal = Vector2(0,-1)
 var correr = 1 
 var direcao_jogador = 0 
 var parado = 1 
-var viloes = ["Vilao1","Vilao2","Vilao3","Vilao4","Vilao5","VilaoNicotina1"]
+var viloes = ["Vilao1","Vilao2","Vilao3","Vilao4","Vilao5","VilaoNicotina1","VilaoNicotina2","VilaoNicotina3","VilaoNicotina4","VilaoNicotina5","VilaoNicotina6"]
 
 #Determina o movimento de andar do jogador
 #Nela esta determinado que ao clicar as setas da direita ou tecla D o jogador se move com animação para a direita,
@@ -74,7 +74,7 @@ func _vida():
 #ao apertar a barra de espaço a cena "Bala" é instanciada e com isso a posição da bala é atrelada à posição do jogador
 func _atirar():
 	if Input.is_action_just_pressed("ui_shoot"):
-		ScriptGlobal.atirando = true
+		ScriptGlobal.atirando = false
 		$ImagemJogador.play("CorrendoAtirandoTenis")
 		$SomTiro.play()
 		var chama_a_bala = preload("res://Cenas/Bala.tscn")

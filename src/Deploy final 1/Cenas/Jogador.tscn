@@ -28,14 +28,44 @@
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ ExtResource( 7 ) ],
-"loop": true,
-"name": "PulandoAtirando",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
 "name": "Pulando",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Correndo",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 25 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "CorrendoAtirandoTenis",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "Parado",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "ParadoAtirando",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 18 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "CorrendoTenis",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 19 ) ],
+"loop": true,
+"name": "PulandoTenis",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ) ],
+"loop": true,
+"name": "PulandoAtirandoTenis",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 17 ) ],
@@ -48,44 +78,14 @@ animations = [ {
 "name": "ParadoAtirandoTenis",
 "speed": 1.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "Correndo",
-"speed": 6.0
-}, {
-"frames": [ ExtResource( 12 ) ],
-"loop": true,
-"name": "Parado",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 11 ), ExtResource( 10 ), ExtResource( 22 ) ],
 "loop": true,
 "name": "CorrendoAtirando",
 "speed": 6.0
 }, {
-"frames": [ ExtResource( 19 ) ],
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
-"name": "PulandoTenis",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 23 ), ExtResource( 25 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "CorrendoAtirandoTenis",
-"speed": 6.0
-}, {
-"frames": [ ExtResource( 15 ), ExtResource( 18 ), ExtResource( 24 ) ],
-"loop": true,
-"name": "CorrendoTenis",
-"speed": 6.0
-}, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
-"name": "ParadoAtirando",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 16 ) ],
-"loop": true,
-"name": "PulandoAtirandoTenis",
+"name": "PulandoAtirando",
 "speed": 5.0
 } ]
 
@@ -108,7 +108,6 @@ position = Vector2( -30, 6.00006 )
 scale = Vector2( 0.346154, 0.346154 )
 frames = SubResource( 6 )
 animation = "CorrendoAtirandoTenis"
-frame = 1
 playing = true
 
 [node name="ColisorJogador" type="CollisionShape2D" parent="."]
