@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/som_item_pego.wav-fbead48c32e4cf6fc55ed95fa67a45e0.sample"
+
+[deps]
+
+source_file="res://Sons/sons cells journey novos/som_item_pego.wav"
+dest_files=[ "res://.import/som_item_pego.wav-fbead48c32e4cf6fc55ed95fa67a45e0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

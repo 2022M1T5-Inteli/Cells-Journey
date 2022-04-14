@@ -1,0 +1,108 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Cenas/Plataformas.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Cenas/Jogador.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Cenas/VilaoComTenis.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Artes/Sprites/tunel.png" type="Texture" id=4]
+[ext_resource path="res://Cenas/Tenis.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Cenas/VilaoSemTenis.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Cenas/MenuDePause.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Artes/Placa.png" type="Texture" id=8]
+[ext_resource path="res://Artes/bkgRosanovo.jpg" type="Texture" id=9]
+[ext_resource path="res://Scripts/Mapa1.gd" type="Script" id=11]
+[ext_resource path="res://Cenas/VoltaProMenu.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Sons/musica background.wav" type="AudioStream" id=13]
+[ext_resource path="res://Cenas/Bala.tscn" type="PackedScene" id=14]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 50.5, 85.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 125, 45.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 65.9995, 63.9999 )
+
+[node name="Mapa1" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="Vilao1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1177, -562 )
+
+[node name="Vilao2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 5846, -579 )
+
+[node name="Vilao3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2519, -409 )
+
+[node name="Vilao4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 7940, -1074 )
+
+[node name="Vilao5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3297, -299 )
+
+[node name="Tenis" parent="." instance=ExtResource( 5 )]
+position = Vector2( -100, -554 )
+
+[node name="MenuDePause" parent="." instance=ExtResource( 7 )]
+
+[node name="Fundo" type="Sprite" parent="."]
+visible = false
+modulate = Color( 0.517647, 0.145098, 0.145098, 1 )
+show_behind_parent = true
+position = Vector2( 5677.25, -100 )
+scale = Vector2( 6.663, 7.31057 )
+texture = ExtResource( 9 )
+
+[node name="VoltaProMenu" parent="." instance=ExtResource( 12 )]
+position = Vector2( 10, -795 )
+
+[node name="SomFundo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+
+[node name="Bala" parent="." instance=ExtResource( 14 )]
+
+[node name="Plataformas" parent="." instance=ExtResource( 1 )]
+
+[node name="TpBossFight" type="Area2D" parent="."]
+
+[node name="ColisorTpBossFight" type="CollisionShape2D" parent="TpBossFight"]
+position = Vector2( 11580, -411 )
+shape = SubResource( 1 )
+
+[node name="EntrouFase" type="Area2D" parent="."]
+
+[node name="ColisorEntrouFase" type="CollisionShape2D" parent="EntrouFase"]
+position = Vector2( 663, -252.5 )
+shape = SubResource( 2 )
+
+[node name="CorpoEstaticoTunel" type="StaticBody2D" parent="."]
+position = Vector2( 11235, -781 )
+
+[node name="Tunel" type="Sprite" parent="CorpoEstaticoTunel"]
+texture = ExtResource( 4 )
+
+[node name="ColisorTunel" type="CollisionPolygon2D" parent="CorpoEstaticoTunel"]
+polygon = PoolVector2Array( -54.999, -132, -33, -130, -23, -118, -16, -103, -11, -80.9999, -1, -29.9999, 10, -79.9999, 14, -96.9998, 19, -115, 27, -128, 37, -135, 54, -136, 62, -127, 63, -107, 65, -86.9999, 66, -43.9999, 67, -18, -64.999, -19, -64.999, -93.9998 )
+
+[node name="AreaTunelNicotina" type="Area2D" parent="CorpoEstaticoTunel"]
+
+[node name="ColisorAreaTunelNicotina" type="CollisionShape2D" parent="CorpoEstaticoTunel/AreaTunelNicotina"]
+position = Vector2( 0.000976563, -85.9999 )
+shape = SubResource( 4 )
+
+[node name="Placa" type="Sprite" parent="."]
+position = Vector2( 11078, -874 )
+scale = Vector2( 0.503333, 0.503333 )
+texture = ExtResource( 8 )
+
+[node name="Jogador" parent="." instance=ExtResource( 2 )]
+position = Vector2( 702.001, -458 )
+
+[connection signal="body_entered" from="Tenis" to="Tenis" method="_on_Tenis_body_entered"]
+[connection signal="body_entered" from="Tenis" to="Jogador" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="VoltaProMenu" to="Jogador" method="_on_VoltaMenu_body_entered"]
+[connection signal="body_entered" from="TpBossFight" to="Jogador" method="_on_TpBossFight_body_entered"]
+[connection signal="body_entered" from="EntrouFase" to="Jogador" method="_on_EntrouFase_body_entered"]
+[connection signal="body_entered" from="CorpoEstaticoTunel/AreaTunelNicotina" to="Jogador" method="_on_AreaTunelNicotina_body_entered"]
+[connection signal="body_entered" from="CorpoEstaticoTunel/AreaTunelNicotina" to="Jogador" method="_on_AreaTunel_body_entered"]

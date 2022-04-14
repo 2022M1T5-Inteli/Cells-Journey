@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/BarraDeVidaDoCigarro.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 1, 0.376471, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 297
+corner_radius_top_right = 297
+corner_radius_bottom_right = 297
+corner_radius_bottom_left = 297
+
+[sub_resource type="StyleBoxFlat" id=2]
+border_width_left = 1
+border_width_top = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+border_blend = true
+corner_radius_top_left = 297
+corner_radius_top_right = 297
+corner_radius_bottom_right = 297
+corner_radius_bottom_left = 297
+
+[node name="VidaDoCigarro" type="CanvasLayer"]
+
+[node name="BarraDeVidaDoCigarro" type="ProgressBar" parent="."]
+margin_left = 859.0
+margin_top = 25.0
+margin_right = 1352.0
+margin_bottom = 60.0
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+max_value = 200.0
+step = 0.5
+value = 200.0
+percent_visible = false
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/VilaoNicotina1.gd" type="Script" id=1]
+[ext_resource path="res://Artes/VilaoNicotina/Nicotinas1.png" type="Texture" id=2]
+[ext_resource path="res://Artes/VilaoNicotina/Nicotinas3.png" type="Texture" id=3]
+[ext_resource path="res://Artes/VilaoNicotina/Nicotinas2.png" type="Texture" id=4]
+[ext_resource path="res://Sons/sons cells journey novos/som_smoke_esmagado.wav" type="AudioStream" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Rastejo",
+"speed": 5.0
+} ]
+
+[node name="VilaoNicotina1" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="ColisorVilaoNicotina" type="CollisionPolygon2D" parent="."]
+position = Vector2( 42.4168, 232.127 )
+scale = Vector2( 0.481273, 0.475895 )
+polygon = PoolVector2Array( 99, 419, 98.5077, 401.769, 98, 384, 122, 365, 126, 330, 126.292, 321.648, 129, 311, 126.292, 291.318, 164.203, 291.318, 197.06, 291.318, 200.851, 333.021, 198.324, 353.241, 209.697, 367.142, 207, 393, 218.543, 406.317, 216.016, 422.746 )
+
+[node name="AnimacaoVilaoNicotina" type="AnimatedSprite" parent="."]
+position = Vector2( 118, 402.5 )
+scale = Vector2( 0.215827, 0.216129 )
+frames = SubResource( 1 )
+animation = "Rastejo"
+frame = 1
+
+[node name="AreaVilaoNicotina" type="Area2D" parent="."]
+
+[node name="ColisorVilaoNicotina" type="CollisionPolygon2D" parent="AreaVilaoNicotina"]
+position = Vector2( 39.4156, 218.08 )
+scale = Vector2( 0.502137, 0.512967 )
+polygon = PoolVector2Array( 125.792, 296.938, 160.254, 296.938, 194.715, 296.938, 197, 333, 195, 358, 207, 373, 208, 398, 215, 409, 211, 423, 98, 419, 99, 384, 120, 366, 124, 344, 124, 329, 127.023, 324.015, 125.792, 316.631 )
+
+[node name="SomMorteVilao" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )

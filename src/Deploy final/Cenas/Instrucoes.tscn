@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Instrucoes.gd" type="Script" id=1]
+[ext_resource path="res://Artes/ajusatdinnnnnnnnn.png" type="Texture" id=2]
+[ext_resource path="res://Artes/Sprites/fundo.png" type="Texture" id=3]
+[ext_resource path="res://Sons/click_2.wav" type="AudioStream" id=4]
+
+[node name="Instrucoes" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ImagemFundo" type="Sprite" parent="."]
+position = Vector2( 682.25, 372.5 )
+scale = Vector2( 4.30126, 1.494 )
+texture = ExtResource( 3 )
+
+[node name="ImagemComoJogar" type="Sprite" parent="."]
+position = Vector2( 699, 372 )
+scale = Vector2( 1.43969, 1.494 )
+texture = ExtResource( 2 )
+
+[node name="Jogar" type="Button" parent="."]
+margin_left = 509.0
+margin_top = 593.0
+margin_right = 879.0
+margin_bottom = 667.0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CameraInstrucoes" type="Camera2D" parent="."]
+position = Vector2( 683, 373 )
+current = true
+
+[node name="SomBotaoJogar" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[connection signal="pressed" from="Jogar" to="." method="_on_Jogar_pressed"]

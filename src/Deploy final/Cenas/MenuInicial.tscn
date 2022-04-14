@@ -1,0 +1,82 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Artes/I-pixel-u.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Artes/nivinnnnnsjhsjhsdkahk.jpg" type="Texture" id=2]
+[ext_resource path="res://Scripts/MenuInicial.gd" type="Script" id=3]
+[ext_resource path="res://Sons/SOM UTERO.wav" type="AudioStream" id=5]
+[ext_resource path="res://Sons/click_2.wav" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = ExtResource( 1 )
+
+[node name="MenuInicial" type="Control"]
+anchor_right = 0.245421
+anchor_bottom = 0.190604
+margin_right = 1028.0
+margin_bottom = 600.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="FundoDoMenu" type="Sprite" parent="."]
+position = Vector2( 682.5, 372.353 )
+scale = Vector2( 1.33301, 1.24216 )
+texture = ExtResource( 2 )
+
+[node name="SaibaMais" type="Button" parent="."]
+margin_left = 6.0
+margin_top = 694.0
+margin_right = 246.0
+margin_bottom = 742.0
+custom_colors/font_color = Color( 0.0627451, 0.0431373, 0.0431373, 1 )
+custom_fonts/font = SubResource( 4 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SomClick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="SomMenu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="Jogar" type="Button" parent="."]
+margin_left = 370.0
+margin_top = 368.0
+margin_right = 993.0
+margin_bottom = 489.0
+custom_colors/font_color = Color( 0.14902, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sair" type="Button" parent="."]
+margin_left = 370.0
+margin_top = 526.0
+margin_right = 993.0
+margin_bottom = 642.0
+custom_colors/font_color = Color( 0.160784, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 3 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="SaibaMais" to="." method="_on_SaibaMais_pressed"]
+[connection signal="pressed" from="SaibaMais" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Jogar" to="." method="_on_Jogar_pressed"]
+[connection signal="pressed" from="Sair" to="." method="_on_Sair_pressed"]
+[connection signal="pressed" from="Sair" to="." method="_on_quit_pressed"]
