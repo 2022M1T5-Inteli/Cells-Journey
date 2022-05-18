@@ -8,7 +8,15 @@
 
 ## Oncode
 
-## Integrantes: <a href="https://www.linkedin.com/in/eduardo-fran%C3%A7a-porto-345bba164/">Eduardo França Porto</a>,<a href="https://www.google.com/">Gabriel Sarue Lerner</a>,<a href="https://www.google.com/">Gustavo Pereira</a>,<a href="https://www.linkedin.com/in/sbluizfernando/">Luiz F S Borges</a>,<a href="https://www.linkedin.com/in/matheus-macedo-santos-2a8106194/">Matheus Macedo Santos</a>, <a href="https://www.linkedin.com/in/rafael-katalan">Rafael Nissim Katalan</a>, <a href="https://www.google.com/">Raphael Lisboa</a> e <a href="https://www.google.com/">Victor de Carvalho</a>, 
+## Integrantes: 
+- <a href="https://www.linkedin.com/in/eduardo-fran%C3%A7a-porto-345bba164/">Eduardo França Porto</a>
+- <a href="https://www.google.com/">Gabriel Sarue Lerner</a>
+- <a href="https://www.google.com/">Gustavo Pereira</a>
+- <a href="https://www.linkedin.com/in/sbluizfernando/">Luiz F S Borges</a>
+- <a href="https://www.linkedin.com/in/matheus-macedo-santos-2a8106194/">Matheus Macedo Santos</a>
+- <a href="https://www.linkedin.com/in/rafael-katalan">Rafael Nissim Katalan</a>
+- <a href="https://www.google.com/">Raphael Lisboa</a>
+- <a href="https://www.google.com/">Victor de Carvalho</a>
 
 ## Descrição
 
@@ -25,18 +33,17 @@ Para isso é utilizado uma mecânica de aventura em plataforma 2D e dialogos int
 
 ## 🛠 Estrutura de pastas
 
--Raiz<br>
+- Raiz<br>
 |<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-|readme.md<br>
+|--> documentos<br>
+  &emsp;|--> antigos<br>
+  &emsp;| GDD ONCODE VERSÃO FINAL.pdf<br>
+|--> executáveis<br>
+  &emsp;|--> Windows<br>
+  &emsp;|--> HTML<br>
+|--> imagens<br>
+|--> src<br>
+| readme.md<br>
 
 <b>Função de cada pasta do GitHub</b>
 
@@ -50,32 +57,47 @@ Para isso é utilizado uma mecânica de aventura em plataforma 2D e dialogos int
 
 ## 🛠 Instalação
 
-<b>Android:</b>
-
-Não há versão para Android.
-
 <b>Windows:</b>
 
-Não há instalação! Apenas executável!
-Encontre os arquivos Cell's_Journey.exe e Cell's_Journey.pck na pasta executáveis e execute-o como qualquer outro programa.
+Não há instalação, apenas executável. Baixe o arquivo disponível em https://drive.google.com/file/d/10quWsEXV2gZpcMRDW4zGegzkueJ0UUOh/view, extraia-o e execute "Cell's_Journey.exe" como qualquer outro programa.
+
+```
+Observe que é necessário que o arquivo "Cell's_Journey.pck" esteja
+no mesmo diretório que "Cell's_Journey.exe" para que o jogo inicie
+corretamente.
+```
 
 <b>HTML:</b>
 
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através do Mozila Firefox) 
+Não há instalação! Baixe o arquivo "Cell's_Journey_HTML.zip" disponível em https://drive.google.com/drive/folders/1_Z4I31Wn7X2ULDTrfMe5mXXjet4GSAPu, extraia-o e o execute como uma página da web (através de algum navegador).
+
+```sh
+Dependendo de suas configurações de firewall, talvez seja necessário
+instaurar um web service como xampp ou wampp para que o jogo rode lo-
+calmente.
+```
 
 ## 📈 Exemplo de uso
 
 O principal exemplo de uso do jogo é no ambiente de sala de aula do ensino médio, juntamente com os outros jogos desenvolvidos por toda a Turma-5 do Inteli. Assim, é possível ensinar desde os conceitos macro, micro e psicosociais envolvidos no tratamento e prevenção do câncer.
 
-## 💻 Configuração para Desenvolvimento
+## 💻 Configuração para desenvolvimento
 
-Para abrir este projeto você necessita apenas do GODOT neste link:
+Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>
+-<a href="https://godotengine.org/download"> Godot</a>
 
-Após baixar e instalar o godot, copie a pasta src em uma nova pasta no seu computador. 
-Em seguida execute o godot e importe o arquivo project.godot que está localizado na pasta onde você colou os arquivos da "scr" 
+Instruções para a configuração do ambiente de desenvolvimento:
+```
+
+1) Baixe a source do projeto disponível em https://drive.google.com/file/d/10quWsEXV2gZpcMRDW4zGegzkueJ0UUOh/view.
+2) Abra a engine de desenvolvimento (godot).
+3) No gerenciador de projetos inicial, clique no botão "importar" e, em seguida, no botão "navegar".
+4) Navegue até a pasta source baixada.
+5) Selecione o arquivo "project.godot" e em seguida clique no botão "abrir".
+6) Pronto. O seu ambiente de desenvolvimento está configurado.
+
+```
 
 ## 🗃 Histórico de lançamentos
 
@@ -135,4 +157,4 @@ Referências utilizadas no jogo.
 2. <https://github.com/gabrieldejesus/readme-model>
 3. <https://creativecommons.org/share-your-work/>
 4. <https://freesound.org/>
-5. Músicas estão referenciadas no GDD na seção 7 Bibliogafrias. 
+5. Músicas estão referenciadas na seção 7 (bibliogafria) do GDD. 
