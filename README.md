@@ -37,12 +37,13 @@ Para isso é utilizado uma mecânica de aventura em plataforma 2D e dialogos int
 |<br>
 |--> documentos<br>
   &emsp;|--> antigos<br>
-  &emsp;| GDD ONCODE VERSÃO FINAL.pdf<br>
+  &emsp;|--> GDD ONCODE VERSÃO FINAL.pdf<br>
 |--> executáveis<br>
   &emsp;|--> Windows<br>
   &emsp;|--> HTML<br>
 |--> imagens<br>
 |--> src<br>
+  &emsp;|--> Deploy final 1<br>
 | readme.md<br>
 
 <b>Função de cada pasta do GitHub</b>
